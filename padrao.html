@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Arte Popular - </title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+
+    .corpo {
+      background-color: #EFEBE9;
+    }
+
+    .first-image {
+      width: 40%;
+      height: 40%;
+    }
+
+    .principal-content {
+      text-align: justify;
+      font-size: 16px;
+      color: #BF360C;
+    }
+
+    .text-title {
+      background-color: #D84315;
+      color: white;
+      font-size:16px;
+      padding: 1px 1px 1px 20px;
+      margin-bottom: 1px; 
+    }
+    /* início accordion*/
+button.accordion {
+    background-color: #3E2723;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #4E342E;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #BCAAA4;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;  
+}
+/* fim accordion */
+
+  </style>
+
+</head>
+
+<body>
+<div class="row">
+ <div class="container">
+  <div class="jumbotron corpo">
+    <div class="text-center">
+    <h1 class="" style="color: #3E2723;">Nome do Artista</h1>
+    <img src="http://www.theenchantedgallery.com/images/The_Enchanted_Gallery-White_Border.gif" alt="Descrição da imagem" class="first-image">
+    <h4 style="color: #3E2723;">Nome do artista<br>
+        Dados da obra
+   </h4>      
+  </div> <!--text-center -->
+
+  <!-- início accordion -->
+  <h2 style="color: #3E2723;">Informações sobre o artista:</h2>
+
+  <button class="accordion">Biografia</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <button class="accordion">Exposições</button>
+  <div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <button class="accordion">Eventos</button>
+  <div id="foo" class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <button class="accordion">Obras</button>
+  <div id="foo" class="panel">
+    <div class="images">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="http://www.theenchantedgallery.com/images/The_Enchanted_Gallery-White_Border.gif" target="_blank">
+              <img src="http://www.theenchantedgallery.com/images/The_Enchanted_Gallery-White_Border.gif" alt="Nome da obra" style="width: 150px; height: 150px;">
+              <div class="caption text-center">
+                <p>Dados da obra</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="http://www.theenchantedgallery.com/images/The_Enchanted_Gallery-White_Border.gif" target="_blank">
+              <img src="http://www.theenchantedgallery.com/images/The_Enchanted_Gallery-White_Border.gif" alt="Nome da obra" style="width: 150px; height: 150px;">
+              <div class="caption text-center">
+                <p>Dados da obra</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="http://www.theenchantedgallery.com/images/The_Enchanted_Gallery-White_Border.gif" target="_blank">
+              <img src="http://www.theenchantedgallery.com/images/The_Enchanted_Gallery-White_Border.gif" alt="Nome da obra" style="width: 150px; height: 150px;">
+              <div class="caption text-center">
+                <p>Dados da obra</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="http://www.theenchantedgallery.com/images/The_Enchanted_Gallery-White_Border.gif" target="_blank">
+              <img src="http://www.theenchantedgallery.com/images/The_Enchanted_Gallery-White_Border.gif" alt="Nome da obra" style="width: 150px; height: 150px;">
+              <div class="caption text-center">
+                <p>Dados da obra</p>
+              </div>
+            </a>
+          </div>
+        </div> 
+      </div><!-- row-->
+    </div><!-- images -->
+  </div>
+  <!-- fim accordion -->
+
+  <!-- script accordion -->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+          acc[i].onclick = function(){
+              this.classList.toggle("active");
+              this.nextElementSibling.classList.toggle("show");
+      }
+    }
+    </script>
+<!-- fim script accordion-->
+
+ 
+    
+ </div><!--container-->
+</div><!--row-->
+</body>
+</html>
